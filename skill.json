@@ -1,0 +1,35 @@
+{
+  "name": "genpark-multi-model-cost-latency-price-performance-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time cross-provider LLM price-performance cost estimator & dynamic router.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "cost-optimizer",
+    "multi-llm-router",
+    "latency-benchmark",
+    "price-performance",
+    "ph-august18"
+  ],
+  "inputs": {
+    "prompt_token_count": {
+      "type": "integer"
+    },
+    "sla_latency_limit_ms": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "selected_model_endpoint": {
+      "type": "string"
+    },
+    "estimated_cost_usd": {
+      "type": "number"
+    },
+    "cost_savings_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
